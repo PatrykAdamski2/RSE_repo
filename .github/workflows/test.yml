@@ -6,5 +6,6 @@ jobs:
   render:
     runs-on: ubuntu-latest 
     steps:
-      - uses: quarto-dev/quarto-actions/setup@v2 
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - uses: actions/checkout@v3
       - run: quarto render thesis.ipynb --to pdf --execute 
