@@ -7,3 +7,4 @@ jobs:
     runs-on: ubuntu-latest 
     steps:
       - uses: quarto-dev/quarto-actions/setup@v2 
+      - run: quarto render thesis.ipynb --to pdf --execute 
